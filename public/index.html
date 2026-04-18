@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
   <head>
     <title>Static Demo</title>
@@ -31,4 +31,115 @@
         
      </div>
   </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Static Demo</title>
+
+<link rel="stylesheet" href="/app.css" />
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        padding: 20px;
+    }
+
+    .container{
+        width: 700px;
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 35px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .container img{
+        width: 260px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #7CFC00;
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 25px;
+        color: #f1f1f1;
+    }
+
+    .btn-group{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    a{
+        text-decoration: none;
+        background: #7CFC00;
+        color: #111;
+        padding: 12px 22px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.3s ease;
+        display: inline-block;
+    }
+
+    a:hover{
+        transform: translateY(-3px);
+        background: white;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Add your image in static folder -->
+    <!-- <img src="images.png" alt="Node JS Logo"> -->
+
+    <h1>Hello Static Files</h1>
+    <p>Served by Node.js</p>
+
+    <div class="btn-group">
+        <a href="about_me.html">About Me</a>
+        <a href="/images.png" alt ="image">Node Picture</a>
+    </div>
+
+</div>
+
+</body>
 </html>
